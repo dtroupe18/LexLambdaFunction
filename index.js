@@ -35,6 +35,7 @@ function dispatch(intentRequest, callback) {
         } else {
             let string = JSON.stringify(result);
             let obj = JSON.parse(string);
+            console.log(obj);
 
             let numberOfOrders = obj.result.ProcessedOrders;
             let startTime = obj.result.StartTime;
